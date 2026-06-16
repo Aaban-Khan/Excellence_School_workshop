@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    /* padding: 20px; */
+    background-color: #f9f9f9;
+    color: #143156;
+}
+
+.heading {
+    font-size: 50px;
+    text-align: center;
+    margin: 30px 0 20px 0;
+}
+
+.divider {
+    width: 50%;
+    height: 0.2rem;
+    border: none;
+    background: #3DB166DE;
+    margin: 0 auto 40px;
+}
+
+.lab-section {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.lab {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 400px;
+    border: 3px solid #143156;
+    border-radius: 10px;
+    overflow: hidden;
+    background: #fff;
+}
+
+.lab-image {
+    width: 100%;
+    height: auto;
+}
+
+.lab-content {
+    padding: 20px;
+    text-align: center;
+}
+
+.lab-title {
+    font-size: 25px;
+    margin: 20px 0;
+}
+
+.lab-description {
+    font-size: 18px;
+    color: #333;
+}
+
+/* Responsive Styles */
+@media (min-width: 768px) {
+    .lab {
+        flex-direction: row;
+        max-width: 100%;
+    }
+
+    .lab:nth-child(odd) {
+        flex-direction: row;
+    }
+
+    .lab:nth-child(even) {
+        flex-direction: row-reverse;
+    }
+
+    .lab-image {
+        width: 50%;
+    }
+
+    .lab-content {
+        width: 50%;
+        text-align: left;
+    }
+
+    .lab-title {
+        font-size: 30px;
+        margin-left: 20px;
+    }
+
+    .lab-description {
+        margin-left: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .heading {
+        font-size: 35px;
+    }
+
+    .divider {
+        width: 80%;
+    }
+
+    .lab-title {
+        font-size: 20px;
+    }
+
+    .lab-description {
+        font-size: 16px;
+    }
+}

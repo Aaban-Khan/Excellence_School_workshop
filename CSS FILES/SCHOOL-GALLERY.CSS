@@ -1,0 +1,76 @@
+* {
+    margin: 5px;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.GALLERY {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 25px 20px;
+}
+
+.GALLERY .heading {
+    width: 50%;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.GALLERY .heading h3 {
+    font-size: 3em;
+    font-weight: bolder;
+    padding-bottom: 15px;
+    color: #143156;
+    border-bottom: 3px solid #000;
+}
+
+.GALLERY .heading h3 span {  
+    font-weight: bolder;
+    color: #3DB166DE;
+}
+
+.GALLERY .box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.GALLERY .box .dream {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin: 10px;
+}
+
+.GALLERY .box .dream img {
+    width: 100%;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+/* Responsive Styles */
+@media only screen and (max-width: 1024px) {
+    .GALLERY .box .dream {
+        width: 45%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .GALLERY .box .dream {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .GALLERY .heading {
+        width: 100%;
+    }
+
+    .GALLERY .heading h3 {
+        font-size: 1.5em;  
+    }
+}

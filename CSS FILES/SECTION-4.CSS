@@ -1,0 +1,217 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+} */
+
+#sec4 {
+    width: 100%;
+    margin-top: 2rem;
+    /* padding: 2rem 0; */
+}
+
+#column {
+    background: linear-gradient(to right, rgba(20, 49, 86, 0.834) 5%, rgb(20, 49, 86) 70%), url(https://i.cdn.turner.com/cnn/2011/WORLD/europe/07/08/newspaper.headlines.notw/t1larg.newspapers.cnn.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    mix-blend-mode: multiply;
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid black;
+}
+
+#column1 {
+    height: 500px;
+    width: 40%;
+    margin: 10px auto;
+}
+
+#column2 {
+    height: 500px;
+    width: 60%;
+    margin: 10px auto;
+}
+
+#column2 h1 {
+    margin-top: 65px;
+    color: #fff;
+    text-decoration: underline;
+    /* text-decoration-color: #3DB166DE; */
+    text-align: center;
+    font-size: 55px;
+    font-weight: bold;
+}
+
+#column2 h1 span {
+    /* font-size: 55px; */
+    color: #3DB166DE;
+}
+
+#column p {
+    font-weight: 550;
+    font-size: 18px;
+    margin: 35px 80px;
+    color: #fff;
+}
+
+.slider {
+    width: 450px;
+    max-width: 100%;
+    height: 300px;
+    border: 7px solid #c4c4c4;
+    border-radius: 15px;
+    margin: 110px auto 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.list {
+    position: absolute;
+    width: max-content;
+    height: 100%;
+    left: 0;
+    top: 0;
+    display: flex;
+    transition: 1s;
+}
+
+.list img {
+    /* width: 100%;
+    max-width: 450px;
+    height: 100%;
+    object-fit: cover; */
+    width: 450px;
+    max-width: 450px;
+    height: 100%;
+    object-fit: cover;
+}
+
+.dots {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    color: #fff;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.dots li {
+    list-style: none;
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    margin: 20px;
+    border-radius: 20px;
+    transition: 0.1s;
+}
+
+.dots li.active {
+    width: 30px;
+}
+
+.buttons {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1rem;
+    box-sizing: border-box;
+}
+
+.buttons button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.5);
+    color: #fff;
+    border: none;
+    font-family: monospace;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 1024px) {
+    
+
+    #column1, #column2 {
+        width: 90%;
+        height: auto;
+        margin: 10px auto;
+    }
+
+    #column2 h1 {
+        font-size: 45px;
+    }
+
+    #column p {
+        margin: 20px;
+        font-size: 16px;
+    }
+
+    .slider {
+        margin: 50px auto 0 auto;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #column {
+        flex-direction: column;
+    }
+
+    #column2 h1 {
+        font-size: 35px;
+    }
+
+    #column p {
+        margin: 20px 10px;
+        font-size: 14px;
+    }
+
+    .slider {
+        height: 250px;
+    }
+
+    .list img {
+        height: 100%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    #column2 h1 {
+        font-size: 28px;
+    }
+
+    #column p {
+        margin: 15px 5px;
+        font-size: 12px;
+    }
+
+    .slider {
+        height: 200px;
+    }
+
+    .buttons button {
+        width: 40px;
+        height: 40px;
+    }
+
+    .dots li {
+        width: 8px;
+        height: 8px;
+        margin: 10px;
+    }
+
+    .dots li.active {
+        width: 20px;
+    }
+}

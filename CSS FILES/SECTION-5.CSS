@@ -1,0 +1,124 @@
+
+
+#sec5{
+    font-family: 'Poppings' sans-serif;
+}
+
+.GALLERY{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 20px 20px 0 20px;
+}
+
+.GALLERY .heading{
+    width: 50%;
+}
+
+.GALLERY .heading h3{
+    font-size: 3em;
+    font-weight: bolder;
+    padding-bottom: 15px;
+    color: #143156;
+    border-bottom: 3px solid #000;
+}
+
+.GALLERY .heading h3 span{  
+      font-weight: bolder;
+      color: #3DB166dE;
+}
+
+.GALLERY .box{
+    margin: 10px 40px;
+    display: flex;
+    flex-direction: row;
+    height: 50%;
+    overflow: hidden;
+    border: 2px solid #fff;
+    justify-content: space-between;
+    width: 70%;
+}
+.GALLERY .box .dream{
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    width: 50.5%;
+}
+.GALLERY .box .dream img{
+    margin: 5px;
+    width: 100%;
+    border-radius: 2px;
+    filter: contrast(#143561);
+}
+.GALLERY .btn{
+    cursor: pointer;
+    border: 0 solid ;
+    margin: 10px 0 70px 0;
+    background: #222;
+    padding: 15px 40px;
+    border-radius: 5px;
+    background-color: #143156;
+}
+.GALLERY .btn a{
+    margin: 40px 0 70px 0;
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: bolder;
+    letter-spacing: 3px;
+    color: aliceblue;
+}
+@media only screen and (max-width: 1024px) {
+    .GALLERY .heading h3 {
+        font-size: 2em;
+    }
+
+    .GALLERY .box .dream {
+        flex: 1 1 calc(50% - 10px);
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .GALLERY .heading h3 {
+        font-size: 1.5em;
+    }
+
+    /* .GALLERY .box {
+        flex-direction: column;
+        align-items: center;
+    } */
+
+    .GALLERY .box{
+        margin: 10px 40px;
+        overflow: hidden;
+        width: 85%;
+    }
+
+    .GALLERY .box .dream {
+        margin: 3px;
+        flex: 1 1 100%;
+        width: 90%;
+    }
+
+    .GALLERY .btn {
+        margin: 20px 0;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .GALLERY .heading h3 {
+        font-size: 1.2em;
+    }
+
+    .GALLERY .box{
+        margin: 10px 10px;
+        overflow: hidden;
+        width: 95%;
+    }
+
+    .GALLERY .box .dream {
+        margin: 2px;
+        width: 100%;
+    }
+}

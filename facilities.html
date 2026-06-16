@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facilities</title>
+    <link rel="stylesheet" href="CSS FILES/facilities.css">
+    <link rel="stylesheet" href="CSS FILES/footer.css">
+    <link rel="stylesheet" href="CSS FILES/HEADER.CSS">
+    <script src="app.js"></script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        @keyframes appear {
+       from {
+         opacity: 0;
+         transform: translateX(-100vw);
+       }
+       to {
+         opacity: 1;
+         transform: translateX(0);
+       }
+     }
+
+     #block2 {
+       animation: appear linear;
+       animation-timeline: view();
+       animation-range: entry 0% cover 40%;
+     }
+
+     @keyframes appear2 {
+       from {
+         opacity: 0;
+         transform: translateX(100vw);
+       }
+       to {
+         opacity: 1;
+         transform: translateX(0);
+       }
+     }
+
+     #block {
+       animation: appear2 linear;
+       animation-timeline: view();
+       animation-range: entry 0% cover 40%;
+     }
+     
+   </style>
+</head>
+<body>
+    <header>
+        <div id="upper-navbar">
+            <p id="upper-nav-items"><i class="fa-regular fa-envelope"></i>School Office <i class="fa-solid fa-phone"></i>Dhar, M.P.</p> 
+                 <!-- <i class="fa-solid fa-language " id="trans"></i> -->
+            <!-- yha translator ko arrange karna hai  -->
+            <div id="google_element"></div>  
+            <script src="https://translate.google.com/translate_a/element.js?cb=loadGoogleTranslate">
+            </script>
+            <script>
+                    function loadGoogleTranslate () {
+                        new google.translate.TranslateElement (
+                                "google_element");
+                     }
+            </script>
+        </div>
+        <nav class="navbar">
+            <div id="navimg">
+                <img src="images/logopic.png" loading="lazy">
+                <h1>Excellence<span> School</span></h1>
+            </div>
+    
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+    
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="EXCELLENCE.HTML">Home</a></li>
+                    <li class="dropdown">
+                        <a href="EXCELLENCE.HTML">About</a>
+                        <!-- <div class="dropdown-content">
+                            <a href="#service1">About School</a>
+                        </div> -->
+                    </li>
+                    <li class="dropdown">
+                        <a href="ACTIVITES.HTML" class="dropbtn">Activities</a>
+                        <div class="dropdown-content">
+                            <a href="ACTIVITES.HTML">Sports</a>
+                            <a href="ACTIVITES.HTML">NCC</a>
+                            <a href="ACTIVITES.HTML">Scout and Guide</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="facilities.html" class="dropbtn">Facilities</a>
+                        <div class="dropdown-content">
+                            <a href="facilities.html">Parking</a>
+                            <a href="facilities.html">Games Room</a>
+                            <a href="facilities.html">Playground</a>
+                            <a href="facilities.html">Dance</a>
+                            <a href="facilities.html">Music</a>
+                            <a href="facilities.html">Library</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="SCHOOL-GALLERY.HTML" class="dropbtn">Gallery</a>
+                        <div class="dropdown-content">
+                            <a href="SCHOOL-GALLERY.HTML">Festivals</a>
+                            <a href="SCHOOL-GALLERY.HTML">Achievements</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="lab.html" class="dropbtn">Laboratories</a>
+                        <div class="dropdown-content">
+                            <a href="lab.html">Physics Lab</a>
+                            <a href="lab.html">Chemistry Lab</a>
+                            <a href="lab.html">Biology Lab</a>
+                            <a href="lab.html">Computer Lab</a>
+                            <a href="lab.html">EFA/AI Lab</a>
+                            <a href="lab.html">Security Lab</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <h1 class="heading">FACILITIES</h1>
+    <hr class="divider">
+
+    <div class="facility-section">
+        
+        <div class="facility">
+            <img src="https://www.heproperty.co.za/wp-content/uploads/2022/02/Andries-Spies-14-3.jpg" alt="Parking" loading="lazy" class="facility-image">
+            <div class="facility-content">
+                <h2 class="facility-title">Parking</h2>
+                <p class="facility-description">The school has a designated parking area for staff and permitted vehicles. Students and visitors are expected to follow campus safety rules at all times. The purpose of this space is to keep the entrance and movement areas organized, reduce crowding, and maintain a safer environment during arrival and dispersal. Rules and Regulations:</p>
+                <ol class="facility-rules">
+                    <li>Students are not allowed vehicles in the campus without a learning license.</li>
+                    <li>Everyone must use a helmet.</li>
+                    <li>Only registered vehicles are allowed in the campus.</li>
+                    <li>No more than two people are allowed on two-wheelers.</li>
+                </ol>
+            </div>
+        </div>
+
+        <div class="facility" id="block2">
+            <img src="https://somlalitschool.org/wp-content/uploads/2023/03/sports-12.jpeg" alt="Games Room" loading="lazy" class="facility-image">
+            <div class="facility-content">
+                <h2 class="facility-title">Games Room</h2>
+                <p class="facility-description">The games room provides space and equipment for indoor activities during school hours. It gives students a chance to relax, play responsibly, and learn teamwork, patience, and fair play. Indoor games also support concentration, decision-making, confidence, and positive interaction among classmates, especially during activity periods and supervised free time.</p>
+            </div>
+        </div>
+
+        <div class="facility" id="block">
+            <img src="https://chinmayavidyalaya.org/assets/img/playground3.JPG" alt="Playground" loading="lazy" class="facility-image">
+            <div class="facility-content">
+                <h2 class="facility-title">Playground</h2>
+                <p class="facility-description">The playground supports sports, physical education, and group activities. Students are encouraged to use the space responsibly, follow safety instructions, and develop fitness, teamwork, and confidence. It provides an open area where students can practice games, participate in school activities, and learn the value of discipline, cooperation, and healthy competition.</p>
+            </div>
+        </div>
+
+        <div class="facility" id="block2">
+            <img src="https://www.sanskrutipgh.com/photos/HomePage-1-570x382.jpg" alt="Dance" loading="lazy" class="facility-image">
+            <div class="facility-content">
+                <h2 class="facility-title">Dance</h2>
+                <p class="facility-description">Dance activities help students express themselves creatively and take part in school functions and cultural programs. Students receive guidance and practice support for performances conducted through the school. These activities encourage confidence on stage, coordination, teamwork, respect for culture, and the ability to present themselves with discipline and grace.</p>
+            </div>
+        </div>
+
+        <div class="facility" id="block">
+            <img src="https://t4.ftcdn.net/jpg/04/10/17/95/360_F_410179527_ExxSzamajaCtS16dyIjzBRNruqlU5KMA.jpg" alt="Music" loading="lazy" class="facility-image">
+            <div class="facility-content">
+                <h2 class="facility-title">Music</h2>
+                <p class="facility-description">Music gives students an opportunity to build rhythm, confidence, and creative expression. Students can practice under guidance and participate in school events and cultural activities. It also helps students develop listening skills, patience, coordination, and appreciation for different forms of art, making school life more balanced and enjoyable.</p>
+            </div>
+        </div>
+
+        <div class="facility" id="block2">
+            <img src="https://thephoenixmandi.in/wp-content/uploads/2021/08/20210802_133748-scaled.jpg" alt="Library" loading="lazy" class="facility-image">
+            <div class="facility-content">
+                <h2 class="facility-title">Library</h2>
+                <p class="facility-description">The library supports reading, reference work, and self-study. It helps students build knowledge beyond textbooks and encourages regular reading habits, curiosity, and independent learning. A good reading environment also improves vocabulary, writing, general awareness, and exam preparation, giving students a quiet space to think, revise, and explore new ideas.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+    <div id="footer">
+    <div class="footer-column1">
+        <h2 class="footer-heading">About</h2>
+        <p>Govt. H.S. Excellence School No.1, Dhar supports students through classroom learning, practical activities, discipline, and a respectful school environment. Facilities are maintained to make daily school life more organized, useful, and comfortable for students and staff.</p>
+        <ul id="icon">
+            <li class="icons"><i class="fa-brands fa-whatsapp"></i></li>
+            <li class="icons"><i class="fa-brands fa-facebook-f"></i></li>
+            <li class="icons"><i class="fa-brands fa-x-twitter"></i></li>
+            <li class="icons"><i class="fa-brands fa-instagram"></i></li>
+        </ul>
+    </div>
+    <div class="footer-column">
+        <h2 class="footer-heading">Contact Us</h2>
+        <p><i class="fa-solid fa-location-dot" id="icon1"></i>Dhar, Ghodha Chopati</p>
+        <p><i class="fa-regular fa-envelope" id="icon2"></i>Contact details will be updated by the school office</p>
+        <p><i class="fa-solid fa-phone-volume" id="icon3"></i>School office, Dhar</p>
+    </div>
+    <div class="footer-column">
+        <h2 class="footer-heading">Useful Links</h2>
+        <ul>
+            <li><a href="EXCELLENCE.HTML"><i class="fa-solid fa-arrow-right"></i>Home</a></li>
+            <li><a href="ACTIVITES.HTML"><i class="fa-solid fa-arrow-right"></i>Activities</a></li>
+            <li><a href="facilities.html"><i class="fa-solid fa-arrow-right"></i>Facilities</a></li>
+            <li><a href="SCHOOL-GALLERY.HTML"><i class="fa-solid fa-arrow-right"></i>Gallery</a></li>
+        </ul>
+    </div>
+    <div class="footer-column">
+        <h2 class="footer-heading">Find Us on Google Map</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3683.493759290169!2d75.30397099999999!3d22.598029800000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3962367976034d51%3A0xce61f5d5d3f47a31!2sSchool%20Of%20Excellence!5e0!3m2!1sen!2sin!4v1716665620656!5m2!1sen!2sin" width="230" height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+</div>
+<hr><br>
+<p class="copyright"> 2024 &#169; School-Of-Excellence | All Rights Reserved</p>
+</footer>
+</body>
+</html>

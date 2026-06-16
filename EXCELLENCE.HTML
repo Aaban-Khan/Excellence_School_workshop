@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXCELLENCE WEBSITE | BY TECH TITANS</title>
+    <link rel="shortcut icon" href="images/logopic.png" type="image/x-icon">
+
+    <!-- FONT-AWESOME-CDN LINK -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- HEADER CSS STARTS -->
+    <link rel="stylesheet" href="CSS FILES/HEADER.CSS">
+
+    <!-- SECTION-1 CSS STARTS -->
+    <link rel="stylesheet" href="CSS FILES/SECTION-1.CSS">
+
+    <!-- SECTION-2 CSS STARTS -->
+    <link rel="stylesheet" href="CSS FILES/SECTION-2.CSS">
+
+    <!-- SECTION-3 CSS STARTS -->
+    <link rel="stylesheet" href="CSS FILES/SECTION-3.CSS">
+
+     <!-- SECTION-4 CSS STARTS -->
+     <link rel="stylesheet" href="CSS FILES/SECTION-4.CSS">
+
+      <!-- SECTION-5 CSS STARTS -->
+      <link rel="stylesheet" href="CSS FILES/SECTION-5.CSS">
+
+      <!-- FOOTER-TEAM CSS STARTS -->
+      <link rel="stylesheet" href="CSS FILES/footerteam.css">
+
+       <!-- FOOTER CSS STARTS -->
+       <link rel="stylesheet" href="CSS FILES/footer.css">
+</head>
+<style>
+     @keyframes appear {
+        from {
+          opacity: 0;
+          scale: 0.5;
+        }
+        to {
+          opacity: 1;
+          scale: 1;
+        }
+      }
+
+      .block {
+        animation: appear linear;
+        animation-timeline: view();
+        animation-range: entry 0% cover 40%;
+      }
+
+      @keyframes appear2 {
+        from {
+          opacity: 0;
+          transform: translateX(-100vw);
+        }
+        to {
+          opacity: 1;
+          transform: translateX(0);
+        }
+      }
+
+      #footer-team .wrapper, .block2 {
+        animation: appear2 linear;
+        animation-timeline: view();
+        animation-range: entry 0% cover 40%;
+      }
+
+      @keyframes appear3 {
+        from {
+          opacity: 0;
+          transform: translateX(100vw);
+        }
+        to {
+          opacity: 1;
+          transform: translateX(0);
+        }
+      }
+
+      #block3 {
+        animation: appear3 linear;
+        animation-timeline: view();
+        animation-range: entry 0% cover 40%;
+      }
+
+</style>
+<body>
+    <!-- HEADER STARTS -->
+    <header>
+        <div id="upper-navbar">
+            <p id="upper-nav-items"><i class="fa-regular fa-envelope"></i>School Office <i class="fa-solid fa-phone"></i>Dhar, M.P.</p>
+                 <!-- <i class="fa-solid fa-language " id="trans"></i> -->
+            <!-- yha translator ko arrange karna hai  -->
+            <div id="google_element"></div>
+            <script src="https://translate.google.com/translate_a/element.js?cb=loadGoogleTranslate">
+            </script>
+            <script>
+                    function loadGoogleTranslate () {
+                        new google.translate.TranslateElement (
+                                "google_element");
+                     }
+            </script>
+        </div>
+
+
+        <nav class="navbar">
+            <div id="navimg">
+                <img src="images/logopic.png" loading="lazy">
+                <h1>Excellence<span> School</span></h1>
+            </div>
+
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#about">About</a>
+                        <!-- <div class="dropdown-content">
+                            <a href="#service1">About School</a>
+                        </div> -->
+                    </li>
+                    <li class="dropdown">
+                        <a href="ACTIVITES.HTML" class="dropbtn">Activities</a>
+                        <div class="dropdown-content">
+                            <a href="ACTIVITES.HTML">Sports</a>
+                            <a href="ACTIVITES.HTML">NCC</a>
+                            <a href="ACTIVITES.HTML">Scout and Guide</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="facilities.html" class="dropbtn">Facilities</a>
+                        <div class="dropdown-content">
+                            <a href="facilities.html">Parking</a>
+                            <a href="facilities.html">Games Room</a>
+                            <a href="facilities.html">Playground</a>
+                            <a href="facilities.html">Dance</a>
+                            <a href="facilities.html">Music</a>
+                            <a href="facilities.html">Library</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="SCHOOL-GALLERY.HTML" class="dropbtn">Gallery</a>
+                        <div class="dropdown-content">
+                            <a href="SCHOOL-GALLERY.HTML">Festivals</a>
+                            <a href="SCHOOL-GALLERY.HTML">Achievements</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="lab.html" class="dropbtn">Laboratories</a>
+                        <div class="dropdown-content">
+                            <a href="lab.html">Physics Lab</a>
+                            <a href="lab.html">Chemistry Lab</a>
+                            <a href="lab.html">Biology Lab</a>
+                            <a href="lab.html">Computer Lab</a>
+                            <a href="lab.html">EFA/AI Lab</a>
+                            <a href="lab.html">Security Lab</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+        <!-- SECTION-1 STARTS -->
+    <section id="sec1">
+        <div class="header">
+          <!--Content before waves-->
+          <div class="inner-header" id="flex">
+            <h1>Where learning begins <br>
+            <span>Govt. H.S. Excellence School No.1, Dhar</span></h1>
+          </div>
+
+          <!--Waves Container-->
+          <div>
+            <svg
+              class="waves"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              viewBox="0 24 150 28"
+              preserveAspectRatio="none"
+              shape-rendering="auto"
+            >
+              <defs>
+                <path
+                  id="gentle-wave"
+                  d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"
+                />
+              </defs>
+              <g class="parallax">
+                <use
+                  xlink:href="#gentle-wave"
+                  x="48"
+                  y="0"
+                  fill="rgba(255,255,255,0.7)"
+                />
+                <use
+                  xlink:href="#gentle-wave"
+                  x="48"
+                  y="3"
+                  fill="rgba(255,255,255,0.5)"
+                />
+                <use
+                  xlink:href="#gentle-wave"
+                  x="48"
+                  y="5"
+                  fill="rgba(255,255,255,0.3)"
+                />
+                <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+              </g>
+            </svg>
+          </div>
+          <!--Waves end-->
+        </div>
+      </section>
+
+            <!-- SECTION-2 STARTS -->
+    <section id="sec2">
+
+        <div id="aboutcontainer">
+            <div id="about" class="block2">
+                <h1>Learning with purpose since 1962</h1>
+                    <p>Govt. H.S. Excellence School No.1, Dhar is a co-educational government school for Classes 9 to 12 in Dhar, Madhya Pradesh. The school focuses on steady academic growth, discipline, practical learning, and a supportive environment where students can learn with confidence. Our aim is to help students become sincere learners who are prepared for examinations, higher studies, and everyday responsibilities.
+                        <br>
+                        The campus includes classrooms, a computer lab, an EFA/A.I. lab, a library, and spaces for sports and school activities. Hindi and English are used for instruction, and the academic session begins in June. Along with classroom teaching, students are encouraged to take part in cultural programs, sports, practical work, and group activities that build confidence and communication.
+                        <br>
+                        The school maintains a simple, respectful, and student-friendly environment. Teachers guide students through regular lessons, revision, discipline, and personal attention wherever possible. Students are also supported through textbooks, applicable scholarship opportunities, and hostel support for eligible students who live far from the city.
+                    </p>
+             </div>
+            <div id="aboutpic" class="block">
+                <img src="images/aboutimg.jpg" loading="lazy">
+            </div>
+        </div>
+        <hr id="hr">
+    </section>
+                <!-- SECTION-3 STARTS -->
+<section id="sec3">
+
+	<div class="gridhead">
+		<h1>Meet Our <span>Educators</span></h1>
+	</div>
+    <div class="container" id="block3">
+
+        <div class="card">
+            <img src="images/teacher-placeholder.png" alt="Faculty placeholder"  loading="lazy">
+            <div class="intro">
+                <h2>Mrs. Amita Bajpai</h2>
+                <p>Faculty Member</p>
+
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="images/teacher-placeholder.png" alt="Faculty placeholder" loading="lazy">
+            <div class="intro">
+                <h2>Mrs. Vinod Rathore</h2>
+                <p>Faculty Member</p>
+
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="images/teacher-placeholder.png" alt="Faculty placeholder" loading="lazy">
+            <div class="intro">
+                <h2>Mr. Abhay Kirkire</h2>
+                <p>Faculty Member</p>
+
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="images/teacher-placeholder.png" alt="Faculty placeholder" loading="lazy">
+            <div class="intro">
+                <h2>Mr. Sanjay Oak</h2>
+                <p>Faculty Member</p>
+
+            </div>
+        </div>
+
+        <div class="card">
+                            <img src="images/teacher-placeholder.png" alt="Faculty placeholder" loading="lazy">
+                            <div class="intro">
+                                <h2>Mrs. Shalini Dubey</h2>
+                                <p>Faculty Member</p>
+
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <img src="images/teacher-placeholder.png" alt="Faculty placeholder" loading="lazy">
+                            <div class="intro">
+                                <h2>Mrs. Jyoti Koshti </h2>
+                                <p>Faculty Member</p>
+
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <img src="images/teacher-placeholder.png" alt="Faculty placeholder" loading="lazy">
+                            <div class="intro">
+                                <h2>Mrs. Usha Verma </h2>
+                                <p>Faculty Member</p>
+
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <img src="images/teacher-placeholder.png" alt="Faculty placeholder" loading="lazy">
+                            <div class="intro">
+                                <h2>Mrs.Arati Nargawe </h2>
+                                <p>Faculty Member</p>
+
+                            </div>
+                        </div>
+
+                        <div class="card">
+							<img src="images/teacher-placeholder.png" alt="Faculty placeholder" loading="lazy">
+                            <div class="intro">
+								<h2>Mrs. Vandana Sonane</h2>
+								<p>Faculty Member</p>
+							</div>
+						</div>
+
+                        <div class="card">
+							<img src="images/teacher-placeholder.png" alt="Faculty placeholder" loading="lazy">
+                            <div class="intro">
+								<h2>Mr. Dhiraj Suryavanshi</h2>
+								<p>Faculty Member</p>
+
+							</div>
+						</div>
+
+
+						<div class="card">
+							<img src="images/teacher-placeholder.png" alt="Faculty placeholder" loading="lazy">
+                            <div class="intro">
+								<h2>Mr. Kamal Tokriya</h2>
+								<p>Faculty Member</p>
+
+							</div>
+						</div>
+
+                        <div class="card">
+							<img src="images/teacher-placeholder.png" alt="Faculty placeholder" loading="lazy">
+                            <div class="intro">
+								<h2>Mr. Shah Navaj Khan</h2>
+								<p>Faculty Member</p>
+
+							</div>
+						</div>
+
+						<div class="card">
+							<img src="images/teacher-placeholder.png" alt="Faculty placeholder" loading="lazy">
+                            <div class="intro">
+								<h2>Mrs. Unnati Sarange</h2>
+								<p>Faculty Member</p>
+
+							</div>
+						</div>
+
+						<div class="card">
+							<img src="images/teacher-placeholder.png" alt="Faculty placeholder" loading="lazy">
+                            <div class="intro">
+								<h2>Mrs. Swati Raghuvanshi</h2>
+								<p>Faculty Member</p>
+
+							</div>
+						</div>
+
+                        <div class="card">
+							<img src="images/teacher-placeholder.png" alt="Faculty placeholder" loading="lazy">
+                            <div class="intro">
+								<h2>Mrs. Chetna Joshi</h2>
+								<p>Faculty Member</p>
+
+							</div>
+						</div>
+
+						<div class="card">
+							<img src="images/teacher-placeholder.png" alt="Faculty placeholder" loading="lazy">
+                            <div class="intro">
+								<h2>Mrs. Hansa Parmar</h2>
+								<p>Faculty Member</p>
+
+							</div>
+						</div>
+
+                        <div class="card">
+							<img src="images/teacher-placeholder.png" alt="Faculty placeholder" loading="lazy">
+                            <div class="intro">
+								<h2>Mrs. Bhawna Vichare</h2>
+								<p>Faculty Member</p>
+
+							</div>
+						</div>
+
+						<div class="card">
+							<img src="images/teacher-placeholder.png" alt="Faculty placeholder" loading="lazy">
+                            <div class="intro">
+								<h2>Mr. Rajesh Nigam</h2>
+								<p>Faculty Member</p>
+
+							</div>
+						</div>
+
+						<div class="card">
+							<img src="images/teacher-placeholder.png" alt="Faculty placeholder" loading="lazy">
+                            <div class="intro">
+								<h2>Mr. Rajendra Rathore</h2>
+								<p>Faculty Member</p>
+
+							</div>
+						</div>
+
+						<div class="card">
+							<img src="images/teacher-placeholder.png" alt="Faculty placeholder" loading="lazy">
+                            <div class="intro">
+								<h2>Mrs. Sharda Joshi</h2>
+								<p>Faculty Member</p>
+
+							</div>
+						</div>
+
+						<div class="card">
+							<img src="images/teacher-placeholder.png" alt="Faculty placeholder" loading="lazy">
+                            <div class="intro">
+								<h2>Mr. Omprakash Bairagi</h2>
+								<p>Faculty Member</p>
+
+							</div>
+						</div>
+
+						<div class="card">
+							<img src="images/teacher-placeholder.png" alt="Faculty placeholder" loading="lazy">
+                            <div class="intro">
+								<h2>Mrs. Arati Kale</h2>
+								<p>Faculty Member</p>
+
+							</div>
+						</div>
+
+                        <div class="card">
+							<img src="images/teacher-placeholder.png" alt="Faculty placeholder" loading="lazy">
+                            <div class="intro">
+								<h2>Mr. Omprakash Daya</h2>
+								<p>Faculty Member</p>
+
+							</div>
+						</div>
+
+						<div class="card">
+							<img src="images/teacher-placeholder.png" alt="Faculty placeholder" loading="lazy">
+                            <div class="intro">
+								<h2>Mr. Ashish Sharma</h2>
+								<p>Faculty Member</p>
+
+							</div>
+						</div>
+
+						<div class="card">
+							<img src="images/teacher-placeholder.png" alt="Faculty placeholder" loading="lazy">
+							<div class="intro">
+								<h2>Mr. Rakesh Wankhede</h2>
+								<p>Faculty Member</p>
+
+							</div>
+						</div>
+
+						<div class="card">
+							<img src="images/teacher-placeholder.png" alt="Faculty placeholder" loading="lazy">
+                            <div class="intro">
+								<h2>Mrs. Sarita Choudhary</h2>
+								<p>Faculty Member</p>
+
+							</div>
+						</div>
+
+						<div class="card">
+							<img src="images/teacher-placeholder.png" alt="Faculty placeholder" loading="lazy">
+                            <div class="intro">
+								<h2>Mrs. Poonam Sharma</h2>
+								<p>Faculty Member</p>
+
+							</div>
+						</div>
+
+						<div class="card">
+							<img src="images/teacher-placeholder.png" alt="Faculty placeholder" loading="lazy">
+                            <div class="intro">
+								<h2>Mr. Yash Ghodkar</h2>
+								<p>Faculty Member</p>
+
+							</div>
+						</div>
+
+						<div class="card">
+							<img src="images/teacher-placeholder.png" alt="Faculty placeholder" loading="lazy">
+                            <div class="intro">
+								<h2>Mrs. Deeksha Chouhan</h2>
+								<p>Faculty Member</p>
+
+							</div>
+						</div>
+
+						<div class="card">
+							<img src="images/teacher-placeholder.png" alt="Faculty placeholder" loading="lazy">
+                            <div class="intro">
+								<h2>Mrs. Minakshi Kumravat</h2>
+								<p>Faculty Member</p>
+
+							</div>
+						</div>
+
+						<div class="card">
+							<img src="images/teacher-placeholder.png" alt="Faculty placeholder" loading="lazy">
+                            <div class="intro">
+								<h2>Mrs. Muskan Agrawal</h2>
+								<p>Faculty Member</p>
+
+							</div>
+						</div>
+
+						<div class="card">
+							<img src="images/teacher-placeholder.png" alt="Faculty placeholder" loading="lazy">
+                            <div class="intro">
+								<h2>Mrs. Varsha Dinglodiya</h2>
+								<p>Faculty Member</p>
+
+							</div>
+						</div>
+
+						<div class="card">
+							<img src="images/teacher-placeholder.png" alt="Faculty placeholder" loading="lazy">
+                            <div class="intro">
+								<h2>Mrs. Amarata Shukla</h2>
+								<p>Faculty Member</p>
+
+							</div>
+						</div>
+    </div>
+</section>
+
+                    <!-- SECTION-4 STARTS -->
+<section id="sec4">
+    <div id="column">
+        <div id="column1" class="block">
+            <div class="slider">
+                <div class="list">
+                    <div class="item">
+                        <img src="images/media-news-01.jpg" alt="Newspaper image" loading="lazy">
+                    </div>
+                    <div class="item">
+                        <img src="images/media-news-02.jpg" alt="Newspaper image" loading="lazy">
+                    </div>
+                    <div class="item">
+                        <img src="images/media-news-03.jpg" alt="Newspaper image" loading="lazy">
+                    </div>
+                    <div class="item">
+                        <img src="images/media-news-04.jpg" alt="Newspaper image" loading="lazy">
+                    </div>
+                    <div class="item">
+                        <img src="images/media-news-05.jpg" alt="Newspaper image" loading="lazy">
+                    </div>
+                </div>
+
+                <!-- button prev and next -->
+                <div class="buttons">
+                    <button id="prev">&lt;</button>
+                    <button id="next">&gt;</button>
+                </div>
+
+                <!-- dots ( if 5 items => 5 dot) -->
+                <ul class="dots">
+                    <li class="active"></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="column2" class="block2">
+            <h1>Media <span>Coverage</span></h1>
+            <p>Media coverage helps families and the wider community stay connected with school events, student activities, exhibitions, and important announcements. It also gives students a chance to see their learning, teamwork, and participation recognized beyond the classroom. School programs, cultural activities, science work, awareness events, and student participation are often meaningful moments for the community, and clear communication helps those moments reach parents and well-wishers in a simple and positive way.</p>
+        </div>
+    </div>
+</section>
+<script src="app.js"></script>
+
+                         <!-- SECTION-5 STARTS -->
+ <section id="sec5" class="block">
+    <div class="GALLERY">
+        <div class="heading">
+            <h3 class="block2">Photo <span>Gallery</span></h3>
+        </div>
+        <div class="box">
+
+            <div class="dream">
+                 <img src="images/gallery-new-04.jpg" loading="lazy">
+                  <img src="images/gallery-new-05.jpg" loading="lazy">
+                  <img src="images/gallery-new-06.jpg" loading="lazy">
+            </div>
+
+            <div class="dream">
+                <img src="images/gallery-new-07.jpg" loading="lazy">
+                 <img src="images/gallery-new-08.jpg" loading="lazy">
+                  <img src="images/gallery-new-09.jpg" loading="lazy">
+            </div>
+
+            <div class="dream">
+                <img src="images/gallery-new-10.jpg" loading="lazy">
+                 <img src="images/gallery-new-11.jpg" loading="lazy">
+                  <img src="images/gallery-new-12.jpg" loading="lazy">
+            </div>
+
+        </div>
+
+        <div class="btn">
+            <a href="SCHOOL-GALLERY.HTML">MORE</a>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER-TEAM STARTS -->
+<section id="footer-team">
+    <h2>Student Project Team</h2>
+    <hr>
+    <div class="wrapper">
+        <div class="members">
+            <div class="team-mem">
+                <img src="images/student-placeholder.png" loading="lazy" alt="Student project team placeholder">
+                <h4>Aaban Khan</h4>
+                <p>Project Coordination</p>
+            </div>
+            <div class="team-mem">
+                <img src="images/student-placeholder.png" loading="lazy" alt="Student project team placeholder">
+                <h4>Tanishk Prajapati</h4>
+                <p>Research and Page Support</p>
+            </div>
+            <div class="team-mem">
+                <img src="images/student-placeholder.png" loading="lazy" alt="Student project team placeholder">
+                <h4>Sanidhya Kushwah</h4>
+                <p>Research and Page Support</p>
+            </div>
+            <div class="team-mem">
+                <img src="images/student-placeholder.png" loading="lazy" alt="Student project team placeholder">
+                <h4>Moinuddin</h4>
+                <p>Design and Content Coordination</p>
+            </div>
+            <div class="team-mem">
+                <img src="images/student-placeholder.png" loading="lazy" alt="Student project team placeholder">
+                <h4>Mahi Mishra</h4>
+                <p>Content Writing and Review</p>
+            </div>
+            <div class="team-mem">
+                <img src="images/student-placeholder.png" loading="lazy" alt="Student project team placeholder">
+                <h4>Parth Sisodiya</h4>
+                <p>Team Guidance and Review</p>
+            </div>
+            <div class="team-mem">
+                <img src="images/student-placeholder.png" loading="lazy" alt="Student project team placeholder">
+                <h4>Vaibhav Prajapat</h4>
+                <p>Team Guidance and Review</p>
+            </div>
+            <div class="team-mem">
+                <img src="images/student-placeholder.png" loading="lazy" alt="Student project team placeholder">
+                <h4>Antimbala Jat</h4>
+                <p>Website Development</p>
+            </div>
+            <div class="team-mem">
+                <img src="images/student-placeholder.png" loading="lazy" alt="Student project team placeholder">
+                <h4>Suhani Rajput</h4>
+                <p>Website Development</p>
+            </div>
+            <div class="team-mem">
+                <img src="images/student-placeholder.png" loading="lazy" alt="Student project team placeholder">
+                <h4>Teena Thakur</h4>
+                <p>Website Development</p>
+            </div>
+            <div class="team-mem">
+                <img src="images/student-placeholder.png" loading="lazy" alt="Student project team placeholder">
+                <h4>Yatindra Thakur</h4>
+                <p>Website Development</p>
+            </div>
+            <div class="team-mem">
+                <img src="images/student-placeholder.png" loading="lazy" alt="Student project team placeholder">
+                <h4>Ikrar Ahmed</h4>
+                <p>Development and Testing Support</p>
+            </div>
+            <div class="team-mem">
+                <img src="images/student-placeholder.png" loading="lazy" alt="Student project team placeholder">
+                <h4>Disha Bariya</h4>
+                <p>Development and Testing Support</p>
+            </div>
+            <div class="team-mem">
+                <img src="images/student-placeholder.png" loading="lazy" alt="Student project team placeholder">
+                <h4>Mohini Rathod</h4>
+                <p>Development and Testing Support</p>
+            </div>
+            <div class="team-mem">
+                <img src="images/student-placeholder.png" loading="lazy" alt="Student project team placeholder">
+                <h4>Anshika Bundela</h4>
+                <p>Development and Testing Support</p>
+            </div>
+            <div class="team-mem">
+                <img src="images/student-placeholder.png" loading="lazy" alt="Student project team placeholder">
+                <h4>Rajpal Prajapati</h4>
+                <p>Development and Testing Support</p>
+            </div>
+            <div class="team-mem">
+                <img src="images/student-placeholder.png" loading="lazy" alt="Student project team placeholder">
+                <h4>Niraj Bundela</h4>
+                <p>Development and Testing Support</p>
+            </div>
+            <div class="team-mem">
+                <img src="images/student-placeholder.png" loading="lazy" alt="Student project team placeholder">
+                <h4>Veshnavi Pawar</h4>
+                <p>Development and Testing Support</p>
+            </div>
+            <div class="team-mem">
+                <img src="images/student-placeholder.png" loading="lazy" alt="Student project team placeholder">
+                <h4>Rukhma Machar</h4>
+                <p>Development and Testing Support</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+                                <!--FOOTER STARTS -->
+<footer>
+
+    <div id="footer">
+    <div class="footer-column1">
+        <h2 class="footer-heading">About</h2>
+        <p>Govt. H.S. Excellence School No.1, Dhar supports students through classroom learning, practical activities, discipline, and a respectful school environment. The school encourages regular attendance, sincere study habits, participation in activities, and cooperation between teachers, students, and families.</p>
+        <ul id="icon">
+            <li class="icons"><i class="fa-brands fa-whatsapp"></i></li>
+            <li class="icons"><i class="fa-brands fa-facebook-f"></i></li>
+            <li class="icons"><i class="fa-brands fa-x-twitter"></i></li>
+            <li class="icons"><i class="fa-brands fa-instagram"></i></li>
+        </ul>
+    </div>
+    <div class="footer-column">
+        <h2 class="footer-heading">Contact Us</h2>
+        <p><i class="fa-solid fa-location-dot" id="icon1"></i>Dhar, Ghodha Chopati</p>
+        <p><i class="fa-regular fa-envelope" id="icon2"></i>Contact details will be updated by the school office</p>
+        <p><i class="fa-solid fa-phone-volume" id="icon3"></i>School office, Dhar</p>
+    </div>
+    <div class="footer-column">
+        <h2 class="footer-heading">Useful Links</h2>
+        <ul>
+            <li><a href="EXCELLENCE.HTML"><i class="fa-solid fa-arrow-right"></i>Home</a></li>
+            <li><a href="ACTIVITES.HTML"><i class="fa-solid fa-arrow-right"></i>Activities</a></li>
+            <li><a href="facilities.html"><i class="fa-solid fa-arrow-right"></i>Facilities</a></li>
+            <li><a href="SCHOOL-GALLERY.HTML"><i class="fa-solid fa-arrow-right"></i>Gallery</a></li>
+        </ul>
+    </div>
+    <div class="footer-column">
+        <h2 class="footer-heading">Find Us on Google Map</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3683.493759290169!2d75.30397099999999!3d22.598029800000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3962367976034d51%3A0xce61f5d5d3f47a31!2sSchool%20Of%20Excellence!5e0!3m2!1sen!2sin!4v1716665620656!5m2!1sen!2sin" width="230" height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+</div>
+<hr><br>
+<p class="copyright"> 2024 &#169; School-Of-Excellence | All Rights Reserved</p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laboratories</title>
+    <link rel="stylesheet" href="CSS FILES/lab.css">
+    <link rel="stylesheet" href="CSS FILES/footer.css">
+    <link rel="stylesheet" href="CSS FILES/HEADER.CSS">
+    <script src="app.js"></script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        @keyframes appear {
+       from {
+         opacity: 0;
+         transform: translateX(-100vw);
+       }
+       to {
+         opacity: 1;
+         transform: translateX(0);
+       }
+     }
+
+     #block2 {
+       animation: appear linear;
+       animation-timeline: view();
+       animation-range: entry 0% cover 40%;
+     }
+
+     @keyframes appear2 {
+       from {
+         opacity: 0;
+         transform: translateX(100vw);
+       }
+       to {
+         opacity: 1;
+         transform: translateX(0);
+       }
+     }
+
+     #block {
+       animation: appear2 linear;
+       animation-timeline: view();
+       animation-range: entry 0% cover 40%;
+     }
+     
+   </style>
+</head>
+<body>
+    <header>
+        <div id="upper-navbar">
+            <p id="upper-nav-items"><i class="fa-regular fa-envelope"></i>School Office <i class="fa-solid fa-phone"></i>Dhar, M.P.</p> 
+                 <!-- <i class="fa-solid fa-language " id="trans"></i> -->
+            <!-- yha translator ko arrange karna hai  -->
+            <div id="google_element"></div>  
+            <script src="https://translate.google.com/translate_a/element.js?cb=loadGoogleTranslate">
+            </script>
+            <script>
+                    function loadGoogleTranslate () {
+                        new google.translate.TranslateElement (
+                                "google_element");
+                     }
+            </script>
+        </div>
+    
+        <nav class="navbar">
+            <div id="navimg">
+                <img src="images/logopic.png" loading="lazy">
+                <h1>Excellence<span> School</span></h1>
+            </div>
+    
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+    
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="EXCELLENCE.HTML">Home</a></li>
+                    <li class="dropdown">
+                        <a href="EXCELLENCE.HTML">About</a>
+                        <!-- <div class="dropdown-content">
+                            <a href="#service1">About School</a>
+                        </div> -->
+                    </li>
+                    <li class="dropdown">
+                        <a href="ACTIVITES.HTML" class="dropbtn">Activities</a>
+                        <div class="dropdown-content">
+                            <a href="ACTIVITES.HTML">Sports</a>
+                            <a href="ACTIVITES.HTML">NCC</a>
+                            <a href="ACTIVITES.HTML">Scout and Guide</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="facilities.html" class="dropbtn">Facilities</a>
+                        <div class="dropdown-content">
+                            <a href="facilities.html">Parking</a>
+                            <a href="facilities.html">Games Room</a>
+                            <a href="facilities.html">Playground</a>
+                            <a href="facilities.html">Dance</a>
+                            <a href="facilities.html">Music</a>
+                            <a href="facilities.html">Library</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="SCHOOL-GALLERY.HTML" class="dropbtn">Gallery</a>
+                        <div class="dropdown-content">
+                            <a href="SCHOOL-GALLERY.HTML">Festivals</a>
+                            <a href="SCHOOL-GALLERY.HTML">Achievements</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="lab.html" class="dropbtn">Laboratories</a>
+                        <div class="dropdown-content">
+                            <a href="lab.html">Physics Lab</a>
+                            <a href="lab.html">Chemistry Lab</a>
+                            <a href="lab.html">Biology Lab</a>
+                            <a href="lab.html">Computer Lab</a>
+                            <a href="lab.html">EFA/AI Lab</a>
+                            <a href="lab.html">Security Lab</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <h1 class="heading">Laboratories</h1>
+    <hr class="divider">
+
+    <div class="lab-section">
+        <div class="lab">
+            <img src="https://vidhyashram.edu.in/wp-content/uploads/2021/04/DSCI0823.jpg" alt="E.F.A Lab" loading="lazy" class="lab-image">
+            <div class="lab-content">
+                <h2 class="lab-title">E.F.A Lab</h2>
+                <p class="lab-description">The E.F.A./A.I. lab supports students in learning digital skills through guided practice, computer-based work, and project activities. It gives students a focused space to explore technology and apply classroom concepts. Students can develop basic computer confidence, logical thinking, safe technology habits, and the ability to use digital tools for learning, communication, and future study.</p>
+            </div>
+        </div>
+
+        <div class="lab" id="block2">
+            <img src="https://assets.thehansindia.com/h-upload/2023/01/06/1328756-ncc.jpg" alt="Security Lab" loading="lazy" class="lab-image">
+            <div class="lab-content">
+                <h2 class="lab-title">Security Lab</h2>
+                <p class="lab-description">The Security Lab supports vocational learning through classroom instruction, demonstrations, and guided practice. The space is used to help students understand safety, awareness, and responsible conduct. Lessons focus on discipline, observation, communication, emergency awareness, and the importance of remaining alert and calm in different situations.</p>
+            </div>
+        </div>
+
+        <div class="lab" id="block">
+            <img src="https://vidhyashram.edu.in/wp-content/uploads/2021/04/DSCI0823.jpg" alt="Biology Lab" loading="lazy" class="lab-image">
+            <div class="lab-content">
+                <h2 class="lab-title">Biology Lab</h2>
+                <p class="lab-description">The Biology Lab helps students learn through observation, models, charts, and practical demonstrations. It supports a clearer understanding of living systems, health, and the natural world. Practical learning helps students connect textbook topics with real-world observations, ask better questions, and develop scientific curiosity through careful observation.</p>
+            </div>
+        </div>
+
+        <div class="lab" id="block2">
+            <img src="https://assets.thehansindia.com/h-upload/2023/01/06/1328756-ncc.jpg" alt="Physical Lab" loading="lazy" class="lab-image">
+            <div class="lab-content">
+                <h2 class="lab-title">Physics Lab</h2>
+                <p class="lab-description">The Physics Lab helps students connect theory with practical observation. Experiments and demonstrations support learning in measurement, motion, electricity, light, and other core science concepts. By seeing principles in action, students improve their problem-solving skills, accuracy, patience, and confidence in understanding scientific ideas.</p>
+            </div>
+        </div>
+
+        <div class="lab" id="block">
+            <img src="https://vidhyashram.edu.in/wp-content/uploads/2021/04/DSCI0823.jpg" alt="Chemistry Lab" loading="lazy" class="lab-image">
+            <div class="lab-content">
+                <h2 class="lab-title">Chemistry Lab</h2>
+                <p class="lab-description">The Chemistry Lab provides a supervised space for practical learning. Students observe experiments, learn safe lab habits, and understand chemical reactions, materials, and basic scientific methods. Practical chemistry helps students become more careful, organized, and curious while learning how scientific processes are tested and explained.</p>
+            </div>
+        </div>
+    </div>
+        
+       <footer>
+    <div id="footer">
+    <div class="footer-column1">
+        <h2 class="footer-heading">About</h2>
+        <p>Govt. H.S. Excellence School No.1, Dhar supports students through classroom learning, practical activities, discipline, and a respectful school environment. Laboratory learning gives students a chance to observe, practice, question, and understand concepts more deeply.</p>
+        <ul id="icon">
+            <li class="icons"><i class="fa-brands fa-whatsapp"></i></li>
+            <li class="icons"><i class="fa-brands fa-facebook-f"></i></li>
+            <li class="icons"><i class="fa-brands fa-x-twitter"></i></li>
+            <li class="icons"><i class="fa-brands fa-instagram"></i></li>
+        </ul>
+    </div>
+    <div class="footer-column">
+        <h2 class="footer-heading">Contact Us</h2>
+        <p><i class="fa-solid fa-location-dot" id="icon1"></i>Dhar, Ghodha Chopati</p>
+        <p><i class="fa-regular fa-envelope" id="icon2"></i>Contact details will be updated by the school office</p>
+        <p><i class="fa-solid fa-phone-volume" id="icon3"></i>School office, Dhar</p>
+    </div>
+    <div class="footer-column">
+        <h2 class="footer-heading">Useful Links</h2>
+        <ul>
+            <li><a href="EXCELLENCE.HTML"><i class="fa-solid fa-arrow-right"></i>Home</a></li>
+            <li><a href="ACTIVITES.HTML"><i class="fa-solid fa-arrow-right"></i>Activities</a></li>
+            <li><a href="facilities.html"><i class="fa-solid fa-arrow-right"></i>Facilities</a></li>
+            <li><a href="SCHOOL-GALLERY.HTML"><i class="fa-solid fa-arrow-right"></i>Gallery</a></li>
+        </ul>
+    </div>
+    <div class="footer-column">
+        <h2 class="footer-heading">Find Us on Google Map</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3683.493759290169!2d75.30397099999999!3d22.598029800000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3962367976034d51%3A0xce61f5d5d3f47a31!2sSchool%20Of%20Excellence!5e0!3m2!1sen!2sin!4v1716665620656!5m2!1sen!2sin" width="230" height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+</div>
+<hr><br>
+<p class="copyright"> 2024 &#169; School-Of-Excellence | All Rights Reserved</p>
+</footer>
+</body>
+
+</html>
